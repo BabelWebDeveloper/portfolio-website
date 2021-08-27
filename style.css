@@ -165,7 +165,7 @@ header{
     .text > h1{
         font-size: 30px;
     }
-    .text > a{
+    .link{
         font-size: 20px;
         padding: 10px;
     }
