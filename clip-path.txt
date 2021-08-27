@@ -1,2 +1,0 @@
--webkit-clip-path: ellipse(86% 61% at 16% 6%);
-clip-path: ellipse(86% 61% at 16% 6%);

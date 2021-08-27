@@ -97,10 +97,8 @@ a{
 }
 /*main code*/
 html{
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     color: #2F9BAD;
-    background-color: #28252C;
-    height: fit-content;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -109,10 +107,6 @@ html{
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-}
-body{
-    background-color: white;
-    width: 100%;
 }
 /* HEADER */
 header{
@@ -147,7 +141,7 @@ header{
     font-size: 15px;
     margin-bottom: 10px;
 }
-.text > a{
+.link{
     text-align: center;
     padding: 5px;
     margin: 5px 0px;
@@ -182,6 +176,14 @@ header{
 main{
     margin-top: 10vw;
 }
+h2{
+    width: 100%;
+    text-align: center;
+    color: #2F9BAD;
+    font-size: 24px;
+    position: absolute;
+    padding-top: 20px;
+}
 section{
     margin: 40px 0 125px 0;
 }
@@ -193,7 +195,7 @@ article{
     width: 30%;
     padding-top: 60px;
 }
-#main-section-1{
+#what-im-doin{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -207,11 +209,6 @@ figcaption{
     font-size: 12px;
     font-weight: 700;
 }
-@media screen and (min-width:700px){
-    figcaption{
-        font-size: 24px;
-    }
-}
 #text-section{
     text-align: center;
     display: flex;
@@ -220,22 +217,31 @@ figcaption{
 }
 #text-section > p{
     width: 70%;
-    font-size: 24px;
+    font-size: 16px;
     padding-top: 90px;
 }
+@media screen and (min-width:700px){
+    figcaption{
+        font-size: 24px;
+    }
+}
+/* portfolio */
 #portfolio{
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: #28252C;
+    margin-bottom: 0;
+    position: relative;
 }
-h2{
-    width: 100%;
-    text-align: center;
-    color: #2F9BAD;
-    font-size: 24px;
+#portfolio > article{
+    margin-bottom: 100px;
+}
+#portfolio > a{
     position: absolute;
-    padding-top: 20px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #labels{
     display: flex;
@@ -270,7 +276,7 @@ label:hover{
     text-align: center;
     width: 90%;
     margin: 24px 5%;
-    height: 100vh;
+    height: 80vw;
 }
 img{
     max-height: 90%;
